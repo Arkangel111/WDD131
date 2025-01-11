@@ -1,7 +1,10 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const currentYearElement = document.querySelector("#currentyear");
+    const lastModifiedElement = document.querySelector("#lastModified");
 
-const currentYear = new Date().getFullYear();
-document.getElementById("copyright").textContent = `© ${currentYear} Your Company Name`;
+    const today = new Date();
+    currentYearElement.textContent = today.getFullYear();
 
-
-const lastModified = document.lastModified;
-document.getElementById("last-modified").textContent = `Last Modified: ${lastModified}`;
+    const lastModified = document.lastModified;
+    lastModifiedElement.textContent = "Last Modified: " + lastModified;
+});
