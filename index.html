@@ -1,60 +1,62 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals</title>
-    <meta name="description"
-        content="WDD 131 - Dynamic Web Fundamentals -- Kelly Cornett -- Website Design and Development for emerging students.">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -- Kelly Cornett.">
     <meta name="author" content="Kelly Cornett">
-    <link rel="stylesheet" href="base.css">
     <script src="getdates.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
 </head>
 
 <body>
     <header>
-        <h1>My website</h1>
+        <h1>My Website</h1>
         <nav>
             <ul>
-                <a href="www.linkedin.com/in/kelly-cornett-17bb4a32a">LinkedIn</a>
-                <a href="https://byupw.instructure.com/">Canvas</a>
-                <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6?lang=eng">Scripture</a>
-                <a href="Final">Final Project</a>
+                <li><a href="https://www.linkedin.com/in/kelly-cornett-17bb4a32a" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6?lang=eng"
+                        target="_blank">Scripture</a></li>
+                <li><a href="Final">Final Project</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="card">
+            <img class="img1" src="images/profile.webp" alt="Photo of Kelly Cornett" width="150" height="200">
             <h2>About Me</h2>
-            <div>
-                <p>My name is Kelly Cornett. I am originally from Washington state (GO HAWKS!). I currently live in
-                    Kentucky with my 5 kids and wife of 17 years. I am a student at BYU and I am currently unemplyed. I
-                    am excited to learn about software development and website design.</p>
-                <img class="img1" src="images/profile.jpg" alt="Kelly Cornett" width="150" height="200">
-            </div>
-            <h3>Kentucky, USA</h3>
-            <img class="img2" src="images/kentucky.jpg" alt="Kentucky, USA" width="250" height="200">
-            <p>I don't honestly know anything about Kentucky since I just moved here a week ago. but one interesting
-                fact is that there is a city named Cornettsville an hour south of me where I hope to go soon and find
-                out some family history.</p>
+            <p>My name is Kelly Cornett. I am originally from Washington state (GO HAWKS!). I currently live in
+                Kentucky with my 5 kids and wife of 17 years. I am a student at BYU and I am currently unemployed. I
+                am excited to learn about software development and website design.</p>
+        </section>
+        <section class="card">
+            <img class="img2" src="images/kentucky-ky-political-map.jpg" alt="Map of Kentucky, USA" width="250"
+                height="200">
+            <h2>Kentucky, USA</h2>
+            <p>I just moved to Kentucky and don’t know much about it yet. One interesting fact is that there is a city
+                named Cornettsville an hour south of me. I hope to visit it soon to explore my family history.</p>
         </section>
         <section class="card">
             <h2>Web Dev Resources</h2>
             <nav>
                 <ul>
-                    <li><a href="https://dev.to/">Dev.to Community</a></li>
-                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                    <li><a href="https://placehold.co/">Image Placeholder</a></li>
-                    <li><a href="https://squoosh.app/">Squoosh</a></li>
-                    <li><a href="https://app.contrast-finder.org/?lang=en">Contrast Finder</a></li>
-                    <li><a href="https://github.com/laisadubiela">GitHub</a></li>
+                    <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://placehold.co/" target="_blank">Image Placeholder</a></li>
+                    <li><a href="https://squoosh.app/" target="_blank">Squoosh</a></li>
+                    <li><a href="https://app.contrast-finder.org/?lang=en" target="_blank">Contrast Finder</a></li>
+                    <li><a href="https://github.com/laisadubiela" target="_blank">GitHub</a></li>
                 </ul>
             </nav>
         </section>
     </main>
     <footer>
-        <p>©️<span id="currentyear"></span> 🚌 Kelly Cornett 🚌 USA</p>
+        <p>©️ <span id="currentyear"></span> 🚌 Kelly Cornett 🚌 USA</p>
         <p id="lastModified"></p>
     </footer>
 </body>
