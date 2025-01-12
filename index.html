@@ -4,60 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals -- Kelly Cornett.">
+    <title>Kelly Cornett - Web Development</title>
+    <meta name="description" content="Dynamic Web Fundamentals - Kelly Cornett's portfolio.">
     <meta name="author" content="Kelly Cornett">
-    <script src="getdates.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="getdates.js" defer></script>
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Kelly Cornett's Website</h1>
         <nav>
             <ul>
                 <li><a href="https://www.linkedin.com/in/kelly-cornett-17bb4a32a" target="_blank">LinkedIn</a></li>
                 <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6?lang=eng"
-                        target="_blank">Scripture</a></li>
+                        target="_blank">Scriptures</a></li>
                 <li><a href="Final" target="_blank">Final Project</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main Content Section -->
     <main>
-        <!-- First Card -->
+        <!-- Card 1 -->
         <section class="card">
-            <img class="card-img" src="images/profile.webp" alt="Kelly Cornett">
+            <img src="images/profile.webp" alt="Kelly Cornett" class="card-img">
             <h2>About Me</h2>
-            <p>My name is Kelly Cornett. I am originally from Washington state (GO HAWKS!). I currently live in
-                Kentucky with my 5 kids and wife of 17 years. I am a student at BYU and excited to learn software
-                development.</p>
+            <p>My name is Kelly Cornett. I’m from Washington state (Go Hawks!) and currently live in Kentucky with my
+                family. I’m a student at BYU, and I’m learning software development and web design.</p>
         </section>
 
-        <!-- Second Card -->
+        <!-- Card 2 -->
         <section class="card">
-            <img class="card-img" src="images/kentucky.jpg" alt="Map of Kentucky">
-            <h2>Kentucky Life</h2>
-            <p>I just moved to Kentucky and don’t know much about it yet. One interesting fact is that there is a city
-                named Cornettsville an hour south of me. I hope to visit it soon to explore my family history.</p>
+            <img src="images/kentucky-map.jpg" alt="Kentucky Map" class="card-img">
+            <h2>Living in Kentucky</h2>
+            <p>I recently moved to Kentucky and am learning more about it. One interesting fact is a nearby town called
+                Cornettsville, which I plan to visit for some family history exploration.</p>
         </section>
 
-        <!-- Third Card -->
+        <!-- Card 3 -->
         <section class="card">
-            <h2>Web Dev Resources</h2>
+            <h2>Web Development Resources</h2>
             <ul>
-                <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://dev.to/" target="_blank">Dev.to</a></li>
                 <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
                 <li><a href="https://squoosh.app/" target="_blank">Squoosh</a></li>
-                <li><a href="https://app.contrast-finder.org/?lang=en" target="_blank">Contrast Finder</a></li>
             </ul>
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>©️ <span id="currentyear"></span> 🚌 Kelly Cornett 🚌 USA</p>
+        <p>© <span id="currentyear"></span> Kelly Cornett</p>
         <p id="lastModified"></p>
     </footer>
 </body>
