@@ -45,33 +45,48 @@ header nav a:hover {
     transition: background-color 0.3s ease;
 }
 
-/* Main Content */
+/* Main Layout */
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
     gap: 20px;
+    /* Space between columns */
     padding: 20px;
 }
 
-.card {
+main section {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.card-img {
+.left-column img,
+.right-column img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
+}
+
+.right-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-column li {
+    margin-bottom: 10px;
+}
+
+.right-column a {
+    text-decoration: none;
+    color: #8D093F;
+}
+
+.right-column a:hover {
+    text-decoration: underline;
+    color: #36178b;
 }
 
 /* Footer */
@@ -89,6 +104,11 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        /* Stack columns vertically on small screens */
+    }
+
     header nav ul {
         flex-direction: column;
         gap: 10px;
