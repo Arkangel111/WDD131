@@ -2,9 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentYearElement = document.querySelector("#currentyear");
     const lastModifiedElement = document.querySelector("#lastModified");
 
+    console.log("Current Year Element: ", currentYearElement);
+    console.log("Last Modified Element: ", lastModifiedElement);
+
     const today = new Date();
-    currentYearElement.textContent = today.getFullYear();
+    if (currentYearElement) {
+        currentYearElement.textContent = today.getFullYear();
+    }
 
     const lastModified = document.lastModified;
-    lastModifiedElement.textContent = "Last Modified: " + lastModified;
+    if (lastModifiedElement) {
+        lastModifiedElement.textContent = "Last Modified: " + lastModified;
+    }
 });
