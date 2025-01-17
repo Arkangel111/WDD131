@@ -6,7 +6,6 @@ body {
     color: #e0e0e0;
 }
 
-/* Main Section Styling */
 main {
     display: flex;
     gap: 20px;
@@ -62,7 +61,6 @@ main section {
     order: 2;
 }
 
-/* Headings */
 h1 {
     font-size: 2em;
     font-weight: 700;
@@ -75,7 +73,6 @@ h3 {
     color: #ffffff;
 }
 
-/* Header */
 header {
     font-size: 1em;
     font-weight: 400;
@@ -89,7 +86,7 @@ header h1 {
     padding: 10px;
 }
 
-/* Navigation */
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -110,7 +107,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Cards */
+
 .card {
     background-color: #2e2e2e;
     color: #e0e0e0;
@@ -130,7 +127,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+
 footer {
     background-color: #2a2a2a;
     color: #e0e0e0;
@@ -142,7 +139,7 @@ footer p {
     margin: 5px;
 }
 
-/* Images */
+
 img {
     border: 1px solid #f0a500;
     border-radius: 10px;
