@@ -1,0 +1,131 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    background-color: maroon;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+    background-color: black;
+}
+
+.data,
+.weather {
+    position: absolute;
+    background: rgba(255, 255, 255, .9);
+    flex: 1 1 25%;
+    padding: 1em;
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.data {
+    top: 20%;
+    left: 5%;
+}
+
+.weather {
+    bottom: 10%;
+    right: 5%;
+}
+
+.data h2,
+.weather h2 {
+    margin: 0;
+    font-size: 18px;
+    background: maroon;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+    left: -30px;
+    width: calc(100% + 20px);
+}
+
+.data ul,
+.weather ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Default: Wide View */
+.weather-icon.mobile-view {
+    display: none;
+}
+
+.weather-icon.wide-view {
+    display: inline;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .weather-icon.wide-view {
+        display: none;
+    }
+
+    .weather-icon.mobile-view {
+        width: 20px;
+        height: auto;
+        display: inline;
+    }
+}
+
+
+.image {
+    position: relative;
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.image img {
+    display: none;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: maroon;
+}
+
+/* Wide screen (desktop) */
+@media (min-width: 768px) {
+    .image #Japan-castle-wide {
+        display: block;
+    }
+}
+
+/* Narrow screen (mobile) */
+@media (max-width: 767px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data,
+    .weather {
+        flex: 1 1 100%;
+    }
+
+    .image #Japan-needle-mobile {
+        display: block;
+    }
+}
