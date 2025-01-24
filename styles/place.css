@@ -79,7 +79,7 @@ main {
     }
 
     .weather-icon.mobile-view {
-        width: 20px;
+        width: 35px;
         height: auto;
         display: inline;
     }
@@ -89,12 +89,12 @@ main {
 .image {
     position: relative;
     width: 100%;
-    /* max-width: 1200px; */
     margin: 0 auto;
+    z-index: 0;
 }
 
 .image img {
-    display: none;
+    display: block;
     width: 100%;
     height: auto;
     z-index: 1;
@@ -104,6 +104,8 @@ footer {
     text-align: center;
     padding: 1em;
     background-color: maroon;
+    position: relative;
+    z-index: 3;
 }
 
 /* Wide screen (desktop) */
@@ -111,21 +113,28 @@ footer {
     .image #Japan-castle-wide {
         display: block;
     }
-}
-
-/* Narrow screen (mobile) */
-@media (max-width: 767px) {
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .data,
-    .weather {
-        flex: 1 1 100%;
-    }
 
     .image #Japan-needle-mobile {
-        display: block;
+        display: none;
     }
-}
+
+    /* Narrow screen (mobile) */
+    @media (max-width: 767px) {
+        main {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .data,
+        .weather {
+            flex: 1 1 100%;
+        }
+
+        .image #Japan-castle-wide {
+            display: none;
+        }
+
+        .image #Japan-needle-mobile {
+            display: block;
+        }
+    }
