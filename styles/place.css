@@ -98,7 +98,7 @@ main {
     }
 
     .weather-icon.mobile-view {
-        width: 35px;
+        width: 30px;
         height: auto;
         display: inline;
     }
